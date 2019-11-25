@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #2980b9;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav{
+display: grid;
+grid-template-columns: 10fr 1fr;
+margin:3vw;
+
+}
+.search{
+    border-radius: 30px;
+    cursor: pointer;
+    padding:10%;
+    justify-self: end;
+
+
+
+}
+.fa-search{
+    font-size: 4vh;
+}
+.search:hover{
+    background-color: white;
+    color:#2980b9;
+}
+
+input{
+    padding:1%;
+    font-size: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid white;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white;
+    opacity: 1; /* Firefox */
+  }
+
+  .city{
+    display: grid;
+    border:0.1px solid grey;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    background-color:#2980b9;
+    margin:2vw;
+    -webkit-box-shadow: 4px 2px 9px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 2px 9px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 2px 9px 0px rgba(0,0,0,0.75);
+    text-align: center;
+
+}
+
+
+.btn{
+cursor: pointer;
+}
+.temp{
+    font-size: 4em;
+}
+.pic{
+    font-size: 100px;
+}
+.temp-name{
+    padding:2%;
+align-self: flex-end;
+}
+.condition-pic{
+    padding:2%;
+    align-self: flex-end;
+
+}
+.name{
+    font-size: 2.5vh;
+    margin-top: 5%;
+}
+.condition{
+    font-size: 2.5vh;
+
+}
+
+.update{
+    cursor: pointer;
+    border-radius: 30px;
+    padding:10%;
+    justify-self: end;
+}
+.fa-plus-circle{
+    padding:50px;
+    font-size:40px;
+}
+.fa-minus-circle{
+    padding:50px;
+    font-size:40px;
+    color:red;
+}
