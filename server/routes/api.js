@@ -3,14 +3,14 @@ const router = express.Router()
 const City = require('../model/City')
 const request = require('request')
 
-let key = "431165c766f74461a4b72112191104"
+let key = "1a1deeb8252a9b875c4796d88e2b9bf2"
 
 
 
 
 router.get('/city/:cityName', function (req, res) {
     let city = req.params.cityName
-    request(`http://api.apixu.com/v1/current.json?key=431165c766f74461a4b72112191104&q=${city}`, function (err, responde) {
+    request(`http://api.weatherstack.com/current.json?access_key=1a1deeb8252a9b875c4796d88e2b9bf2&q=${city}`, function (err, responde) {
         let data = JSON.parse(responde.body)
         
         res.send(data)
@@ -32,7 +32,7 @@ router.post('/city', function (req, res) {
 
 router.put('/city/:cityName', function(req,res){
     let city = req.params.cityName
-    request(`http://api.apixu.com/v1/current.json?key=431165c766f74461a4b72112191104&q=${city}`, function (err, responde) {
+    request(`http://api.weatherstack.com/current.json?access_key=1a1deeb8252a9b875c4796d88e2b9bf2&q=${city}`, function (err, responde) {
         let data = JSON.parse(responde.body)
         let info = ({
             name: data.location.name,
